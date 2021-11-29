@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+    
+    
+  </head>
+   <body>
+
+ <p id="description"> Below is the calculator app </p> 
+<H1 id = "title" >Calculator</H1>
+
+<table border="1">
+<tr>
+<td><button type="button" class="button" value="c" id="clear" onclick="clr()"> c </button> </td>
+<td colspan="3"><input type="text" id="result"/></td>
+<!-- clr() function will call clr to clear all value -->
+</tr>
+<tr>
+<!-- creating buttons and assigning values-->
+<td><button type="button" class="button" value="+" id="add" onclick="dis('+')">+ </button> </td>
+<td><button type="button" class="button"  value="1" id="1" onclick="dis('1')"> 1 </button> </td>
+<td><button type="button" class="button" value="2" id="2" onclick="dis('2')"> 2 </button> </td>
+<td><button type="button" class="button" value="3"  id="3" onclick="dis('3')"> 3 </button> </td>
+</tr>
+<tr>
+<td><button type="button" class="button" value="-" id="subtract" onclick="dis('-')"> - </button> </td>
+<td><button type="button" class="button" value="4" id="4" onclick="dis('4')"> 4 </button> </td>
+<td><button type="button" class="button" value="5" id="5" onclick="dis('5')"> 5 </button> </td>
+<td><button type="button" class="button" value="6" id="6" onclick="dis('6')"> 6 </button> </td>
+</tr>
+<tr>
+<td><button type="button" class="button" value="*" id="multiply" onclick="dis('*')"> * </button> </td>
+<td><button type="button" class="button" value="7" id="7" onclick="dis('7')"> 7 </button> </td>
+<td><button type="button" class="button" value="8" id="8" onclick="dis('8')"> 8 </button> </td>
+<td><button type="button" class="button" value="9" id="9" onclick="dis('9')"> 9 </button> </td>
+</tr>
+<tr>
+<td><button type="button" class="button" value="/" id="division" onclick="dis('/')"> / </button> </td>
+<td><button type="button" class="button" value="." onclick="dis('.')"> . </button> </td>
+<td><button type="button" class="button" value="0" onclick="dis('0')"> 0 </button> </td>
+<!-- Evaluating function call eval()-->
+<td><button type="button" class="button" value="=" id="equal" onclick="solve()"> = </button> </td>
+</tr>
+</table>
+  
+</body>
+
+  <script src="script.js"></script>
+  <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+</html>
+
+<!-- the css selectors are inside the style tag -->
